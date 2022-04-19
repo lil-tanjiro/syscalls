@@ -6,6 +6,7 @@ import (
 	"unsafe"
 )
 
+//#include <string.h>
 //#include <semaphore.h>
 //#include <errno.h>
 //#include <sys/ipc.h>
