@@ -107,3 +107,7 @@ func UnixShmAttach(id int) (unsafe.Pointer, error) {
 
 	return r, nil
 }
+
+func UnixShmRm(id int) {
+	C.shmctl(C.int(id), C.IPC_RMID, nil)
+}
